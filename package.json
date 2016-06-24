@@ -6,7 +6,9 @@
   "dependencies": {
     "less": "^2.6.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "^1.13.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
