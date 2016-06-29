@@ -105,6 +105,12 @@ body {
 .color {
   color: #C3A871;
 }
+.color-white {
+  color: #fff;
+}
+.font-large {
+  font-size: 16px;
+}
 .bg-color {
   background-color: #C3A871;
   color: #fff;
@@ -2505,7 +2511,8 @@ fieldset[disabled] .btn.ribbon.active {
 }
 .pins {
   list-style: none;
-  color: #ADB1B5;
+  color: #C3A871;
+  /* @text-color-light; */
   padding: 0;
   margin: 0;
 }
@@ -2587,9 +2594,15 @@ fieldset[disabled] .btn.ribbon.active {
 #bridesmaidsgroomsmen {
   background-image: url("../images/wedding-img.jpg");
 }
+.principal-sponsors-buttons .btn,
+.secondary-sponsors-buttons .btn,
+.boys-girls-buttons .btn,
 .bridesmaids-groomsmen-buttons .btn {
   margin: 10px;
 }
+.principal-sponsors-slider .item,
+.secondary-sponsors-slider .item,
+.boys-girls-slider .item,
 .bridesmaids-groomsmen-slider .item {
   position: relative;
   margin: 0 auto 35px;
@@ -2600,6 +2613,9 @@ fieldset[disabled] .btn.ribbon.active {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
+.principal-sponsors-slider .item .image,
+.secondary-sponsors-slider .item .image,
+.boys-girls-slider .item .image,
 .bridesmaids-groomsmen-slider .item .image {
   width: 100%;
   max-height: 260px;
@@ -2614,6 +2630,9 @@ fieldset[disabled] .btn.ribbon.active {
   -o-transition: background-size 0.3s ease-out;
   transition: background-size 0.3s ease-out;
 }
+.principal-sponsors-slider .item .image img,
+.secondary-sponsors-slider .item .image img,
+.boys-girls-slider .item .image img,
 .bridesmaids-groomsmen-slider .item .image img {
   width: 100%;
   -webkit-transition: all 0.3s ease-out;
@@ -2622,6 +2641,9 @@ fieldset[disabled] .btn.ribbon.active {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+.principal-sponsors-slider .item .image .info,
+.secondary-sponsors-slider .item .image .info,
+.boys-girls-slider .item .image .info,
 .bridesmaids-groomsmen-slider .item .image .info {
   position: absolute;
   top: 0;
@@ -2648,25 +2670,40 @@ fieldset[disabled] .btn.ribbon.active {
   -moz-box-shadow: inset 0px 0px 0px 2px rgba(195, 168, 113, 0.5);
   box-shadow: inset 0px 0px 0px 2px rgba(195, 168, 113, 0.5);
 }
+.principal-sponsors-slider .item .image .info h3,
+.secondary-sponsors-slider .item .image .info h3,
+.boys-girls-slider .item .image .info h3,
 .bridesmaids-groomsmen-slider .item .image .info h3 {
   color: #C3A871;
   margin-top: 70px;
   font-size: 24pt;
 }
+.principal-sponsors-slider .item .image .info .title,
+.secondary-sponsors-slider .item .image .info .title,
+.boys-girls-slider .item .image .info .title,
 .bridesmaids-groomsmen-slider .item .image .info .title {
   display: block;
   color: #73777b;
   text-transform: uppercase;
 }
+.principal-sponsors-slider .item:hover .image,
+.secondary-sponsors-slider .item:hover .image,
+.boys-girls-slider .item:hover .image,
 .bridesmaids-groomsmen-slider .item:hover .image {
   background-size: auto 120%;
 }
+.principal-sponsors-slider .item:hover .image img,
+.secondary-sponsors-slider .item:hover .image img,
+.boys-girls-slider .item:hover .image img,
 .bridesmaids-groomsmen-slider .item:hover .image img {
   -webkit-transform: scale(1.3);
   -moz-transform: scale(1.3);
   -o-transform: scale(1.3);
   transform: scale(1.3);
 }
+.principal-sponsors-slider .item:hover .image > .info,
+.secondary-sponsors-slider .item:hover .image > .info,
+.boys-girls-slider .item:hover .image > .info,
 .bridesmaids-groomsmen-slider .item:hover .image > .info {
   visibility: visible;
   -webkit-opacity: 1;
@@ -2674,6 +2711,9 @@ fieldset[disabled] .btn.ribbon.active {
   opacity: 1;
   border: 10px solid transparent;
 }
+.principal-sponsors-slider .item.disabled,
+.secondary-sponsors-slider .item.disabled,
+.boys-girls-slider .item.disabled,
 .bridesmaids-groomsmen-slider .item.disabled {
   display: none;
 }

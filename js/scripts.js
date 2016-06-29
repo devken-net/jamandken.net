@@ -619,6 +619,48 @@ var Lilac;
                     });
                 }
 
+                if ($(".principal-sponsors-slider").length) {
+                    $(".principal-sponsors-slider").owlCarousel({
+                        itemsCustom: [
+                            [0, 1],
+                            [590, 2],
+                            [751, 2],
+                            [975, 3],
+                            [1183, 4],
+                            [1440, 4],
+                            [1728, 4]
+                        ]
+                    });
+                }
+
+                if ($(".secondary-sponsors-slider").length) {
+                    $(".secondary-sponsors-slider").owlCarousel({
+                        itemsCustom: [
+                            [0, 1],
+                            [590, 2],
+                            [751, 2],
+                            [975, 3],
+                            [1183, 4],
+                            [1440, 4],
+                            [1728, 4]
+                        ]
+                    });
+                }
+
+                if ($(".boys-girls-slider").length) {
+                    $(".boys-girls-slider").owlCarousel({
+                        itemsCustom: [
+                            [0, 1],
+                            [590, 2],
+                            [751, 2],
+                            [975, 3],
+                            [1183, 4],
+                            [1440, 4],
+                            [1728, 4]
+                        ]
+                    });
+                }
+
                 if ($(".bridesmaids-groomsmen-slider").length) {
                     $(".bridesmaids-groomsmen-slider").owlCarousel({
                         itemsCustom: [
@@ -954,6 +996,72 @@ var Lilac;
                     }, 1500, 'easeInOutExpo', function () {
                         navActive.blur();
                     });
+                });
+
+                // Capture .principal-sponsors-buttons Buttons click event.
+                $(".principal-sponsors-buttons .btn").on('click', function (e) {
+                    e.preventDefault();
+
+                    var t = $(this),
+                        slider = t.data("slider");
+
+                    if (!t.hasClass("active")) {
+                        $(".principal-sponsors-slider").addClass("hide").css({opacity: 0});
+
+                        if (first) {
+                            first = false;
+                            $("#" + slider).removeClass("hide");
+                        } else {
+                            $("#" + slider).removeClass("hide").animate({opacity: 1}, 500);
+                        }
+                    }
+
+                    $(".principal-sponsors-buttons .btn").removeClass("active");
+                    t.addClass("active");
+                });
+
+                // Capture .secondary-sponsors-buttons Buttons click event.
+                $(".secondary-sponsors-buttons .btn").on('click', function (e) {
+                    e.preventDefault();
+
+                    var t = $(this),
+                        slider = t.data("slider");
+
+                    if (!t.hasClass("active")) {
+                        $(".secondary-sponsors-slider").addClass("hide").css({opacity: 0});
+
+                        if (first) {
+                            first = false;
+                            $("#" + slider).removeClass("hide");
+                        } else {
+                            $("#" + slider).removeClass("hide").animate({opacity: 1}, 500);
+                        }
+                    }
+
+                    $(".secondary-sponsors-buttons .btn").removeClass("active");
+                    t.addClass("active");
+                });
+
+                // Capture .boys-girls-buttons Buttons click event.
+                $(".boys-girls-buttons .btn").on('click', function (e) {
+                    e.preventDefault();
+
+                    var t = $(this),
+                        slider = t.data("slider");
+
+                    if (!t.hasClass("active")) {
+                        $(".boys-girls-slider").addClass("hide").css({opacity: 0});
+
+                        if (first) {
+                            first = false;
+                            $("#" + slider).removeClass("hide");
+                        } else {
+                            $("#" + slider).removeClass("hide").animate({opacity: 1}, 500);
+                        }
+                    }
+
+                    $(".boys-girls-buttons .btn").removeClass("active");
+                    t.addClass("active");
                 });
 
                 // Capture .bridesmaids-groomsmen-buttons Buttons click event.
