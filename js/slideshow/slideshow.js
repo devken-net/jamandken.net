@@ -6,11 +6,11 @@ $(function($){
 		transition_speed	:	2000,		// Speed of transition
 												   
 		// Components							
-		slide_links			:	'false',
+		slide_links			:	'true',
 		slides 				:  	[			// Slideshow Images
-										{image : 'http://placehold.it/1920x1080'},
-										{image : 'http://placehold.it/1920x1080'},  
-										{image : 'http://placehold.it/1920x1080'}
+										{image : './images/slider1.jpg'},
+										{image : './images/slider1.jpg'},  
+										{image : './images/slider1.jpg'}
 								]
 	});
 });
